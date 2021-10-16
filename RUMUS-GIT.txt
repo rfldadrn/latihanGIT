@@ -1,0 +1,48 @@
++++INSTALASI GIT
+==========================
+===GIT===
+1.Buat Folder GIT
+2.Git Base Here
+3.git init
+4.daftarkan username dan email
+	ex : git config --global user.name "nama"
+	ex : git config --global user.email email
+
++++MENAMBAH FILE BARU
+=============================
+===PENTING===
+ada 3 bagian dalam GIT
+	1.Working Tree : semua file akan masuk ke working tree
+	2.Staging Area : semua perubahan file yang ada di staging area akan menjadi history ketika di commit
+	3.History : perubahan file yang sudah di commit tersimpan oleh git
+
+***LANJUTAN***
+ketika melakukan git commit , artinya semua file yang ada di STAGING AREA akan menjadi commit (terekam oleh git)
+
+***PERINTAH***
+git status : untuk men cek status file (working area)
+git add namafile.ekstensi : untuk menambahkan file (staging area)
+git commit -m "Keterangan"
+	ex : -m digunakan agar tidak perlu membuka code editor
+git log : untuk melihat history commit detail
+git log --oneline : untuk melihat history commit ringkas
+git remote add namaremote link : untuk menghubungkan git lokal dengna git oline
+	ex : git remote add github https://github.com/rfldadrn/latihanGIT.git
+git remote -v : untuk ceek remote
+git push github master : untuk unggah / push kode ke github (master adalah nama branch)
+git restore --staged namafile : untuk memindahkan file dari staging kembali ke working tree
+	ex : git restore --staged index.html
+git tag -a <versi> <commit hash> -m "Pesan versi" : untuk menambahkan tag kode versi pada commit tertentu
+	ex : git tag -a v1.0 kode(HEAD->Master) -m "Versi pertama"
+
++++MENAMBAH FILE DARI GITHUB
+===========================================
+dimengerti
+
+***MELAKUKAN PULL***
+pull adalah proses mengunduh kode yang ada diremote (github) ke komputer kita
+langkah : 
+1.buka gitbash 
+2.git pull github master (github adalah nama remote) (master adalah nama branch)
+	-> maka file akan diunduh
+***MENYELESAIKAN CONFLICT***
