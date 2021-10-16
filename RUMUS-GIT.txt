@@ -59,6 +59,21 @@ misal kita ingin melihat history / kondisi file di commit sebelum nya
 	ex : git checkout master
 4. melakukan undo commit
 	- jalankan git log --oneline
-	- git revert <commit yang ingin dibatalkan>
+	- git revert <commit yang ingin diba	talkan>
 		ex : git revert fd0602a
 
+***MEMISAHKAN ENVIRONMENT***
+	Dimana kita akan membuat sebuah file / project eksperimen tanpa mengganggu file utama kita dengan menggunakan branch
+===LANGKAH LANGKAH===
+1.membuat branch baru : git branch <nama branch>
+						ex : git branch dev-program
+2.untuk mengecek apakah branch tsb sudah di buat , cek dengan : git branch -v 
+3.untuk pindah branch bisa dengan : git checkout <nama branch>
+
+***MENGGABUNGKAN BRANCH***
+	jika project eksperimen kita sudah disetujui , dan ingin menggabungkan ke 2 branch , maka :
+1.pindah kan ke branch master :
+		ex : git checkout master
+2.jalankan perintah : 
+		ex : git merge <nama branch yang ingin disatukan>
+		ex : git merge dev-program
