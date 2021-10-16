@@ -46,3 +46,19 @@ langkah :
 2.git pull github master (github adalah nama remote) (master adalah nama branch)
 	-> maka file akan diunduh
 ***MENYELESAIKAN CONFLICT***
+beda versi , jadi file yang di update melalui git , jika kita pull , maka file akan menyesuaikan sendiri
+
+***KEMBALI KE COMMIT SEBELUMNYA***
+misal kita ingin melihat history / kondisi file di commit sebelum nya
+===LANGKAH===
+1. jalankan git log --oneline 
+	ex : untuk melihat kode commit
+2. git checkout <commit hash>
+	ex : git checkout 123asd
+3. cara kembali ke commit semula 
+	ex : git checkout master
+4. melakukan undo commit
+	- jalankan git log --oneline
+	- git revert <commit yang ingin dibatalkan>
+		ex : git revert fd0602a
+
