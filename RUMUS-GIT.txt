@@ -77,3 +77,6 @@ misal kita ingin melihat history / kondisi file di commit sebelum nya
 2.jalankan perintah : 
 		ex : git merge <nama branch yang ingin disatukan>
 		ex : git merge dev-program
+3.cara menghapus branch : 
+		ex : git branch -d <nama branch>
+		
